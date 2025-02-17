@@ -37,10 +37,15 @@ const EditEmployee = () => {
 
   const form_submit = (event) => {
     event.preventDefault();
-    axios.post('http://localhost:3000/auth/update_employee/' + id, employee)
+    axios.put('http://localhost:3000/auth/update_employee/' + id, employee)
       .then(result => {
-        alert('編輯員工資料完成')
-        navigate('/dashboard/employee')
+        if (result.data.Status) {
+          alert('編輯員工資料完成')
+          navigate('/dashboard/employee')
+        } else {
+          alert('更新資料發生錯誤，請稍後再試')
+        }
+       
       })
       .catch(err => console.log(err)
       )

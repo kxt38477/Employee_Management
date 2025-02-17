@@ -3,7 +3,7 @@ import express from "express"
 
 const router = express.Router();
 
-router.post('/update_employee/:id', (req, res) => {
+router.put('/update_employee/:id', (req, res) => {
     const SQL = 'UPDATE employee SET name = ? , email = ? , salary = ? , category_id = ? WHERE id = ? '
     const id = req.params.id
     con.query(SQL, [req.body.name, req.body.email, req.body.salary, req.body.category_id, id], (err, result) => {

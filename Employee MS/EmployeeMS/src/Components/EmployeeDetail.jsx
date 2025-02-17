@@ -36,7 +36,6 @@ const EmployeeDetail = () => {
       <h3>Email:{detail.email}</h3>
       <h3>Salary:{detail.salary}</h3>
       <div>
-        <button className='btn btn-primary mx-1'>123</button>
         <button className='btn btn-danger mx-1' onClick={log_out}>Log Out</button>
       </div>
     </div>
