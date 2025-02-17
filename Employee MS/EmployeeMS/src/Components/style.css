@@ -1,0 +1,42 @@
+.loginPage {
+    background: url(../../public/Images/employeems.jpeg);
+    background: linear-gradient(rgba(11, 11, 11, 0.5), rgba(10, 10, 10, 0.5)), url("../../public/Images/employee.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 120%;
+}
+
+.loginForm {
+    background-color: rgba(255, 255, 255, 0.555);
+    color: black;
+}
+
+.employee_image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.empImg {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+}
+
+.profile_table {
+    table-layout: fixed; 
+    
+    width: 100%;         
+}
+
+.profile_table th, td {
+    width: 20%;           
+    /* text-align: center;    */
+    vertical-align: middle;
+}
+
+@media (max-width: 1024px) {
+    .profile_table th, td {
+        font-size: 15px; 
+    }
+}
